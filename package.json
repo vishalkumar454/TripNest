@@ -1,0 +1,36 @@
+{
+  "name": "tripnest",
+  "version": "1.0.0",
+  "description": "A comfortable place to stay during your trip",
+  "keywords": [
+    "travel",
+    "hotel",
+    "booking",
+    "accommodation",
+    "stay",
+    "trip",
+    "homestay",
+    "vacation",
+    "tourism"
+  ],
+  "homepage": "https://github.com/vishalkumar454/TripNest#readme",
+  "bugs": {
+    "url": "https://github.com/vishalkumar454/TripNest/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishalkumar454/TripNest.git"
+  },
+  "license": "ISC",
+  "author": "Vishal Kumar",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^5.0.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.1"
+  }
+}
