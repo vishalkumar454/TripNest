@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripNest</title>
+</head>
+<body>
+    <h3>Edit your Listing</h3>
+    <hr>
+    <form method="post" action="/listings/<%= userData._id %>?_method=PUT">
+        <input type="text" name="listing[title]" value="<%= userData.title %>" id="title" placeholder="Enter Title">
+        <br><br>
+        <textarea type="text" name="listing[description]" placeholder="describe your listing"><%= userData.description %></textarea>
+        <br><br>
+        <input type="text" name="listing[image]" value="<%= userData.image %>" id="image" placeholder="Enter image url/Link">
+        <br><br>
+        <input type="number" name="listing[price]" value="<%= userData.price %>" id="price" placeholder="Enter price">
+        <br><br>
+        <input type="text" name="listing[location]" value="<%= userData.location %>" id="location" placeholder="Enter location">
+        <br><br>
+        <input type="text" name="listing[country]" value="<%= userData.country %>" id="country" placeholder="Enter country">
+        <br><br>
+        <button>Edit</button>
+    </form>
+</body>
+</html>
