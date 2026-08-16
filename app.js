@@ -3,14 +3,16 @@ const app = express()
 const mongoose = require("mongoose")
 const Listing = require("./models/listings.js")
 const methodOverride = require("method-override")
+const ejsMate = require("ejs-mate")
 
 const MONGO_URL = "mongodb://127.0.0.1:27017/tripnest"
-
 const path = require("path")
+
 app.set("view engine","ejs")
 app.set("views",path.join(__dirname,"views"))
 app.use(express.urlencoded({extended : true}))
 app.use(methodOverride("_method"))
+app.engine("ejs", ejsMate)
 
 main().then(() => console.log("Connected to DB"))
     .catch((err) => console.log(err))
